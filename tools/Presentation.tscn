@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tools/Presentation.gd" type="Script" id=1]
+[ext_resource path="res://tools/Background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://tools/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://tools/PresentationCamera.tscn" type="PackedScene" id=4]
+
+[node name="Presentation" type="Node2D"]
+script = ExtResource( 1 )
+cursor_scale = 0.5
+
+[node name="Background" parent="." instance=ExtResource( 2 )]
+
+[node name="HUD" parent="." instance=ExtResource( 3 )]
+
+[node name="PresentationCamera" parent="." instance=ExtResource( 4 )]
+
